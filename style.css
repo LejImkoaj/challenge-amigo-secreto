@@ -92,6 +92,13 @@ body {
     justify-content: center;
 }
 
+/*agrega boton de nuevo juego*/
+.button-container2 {
+    padding: 50px;
+    justify-content: center;
+    flex-direction: column;
+}
+
 /* Estilos de entrada de texto */
 .input-title {
     flex: 1;
