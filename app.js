@@ -17,6 +17,10 @@ function agregarAmigo() {
     }
 
     amigos.push(nombre);
+
+    //Guarda copia original, cuando se agregan nombres
+    copiaAmigosOriginal = [...amigos];
+
     mostrarLista();
     input.value = "";
 }
@@ -35,6 +39,8 @@ function mostrarLista() {
 function sortearAmigo() {
     if (amigos.length === 0) {
         alert("Todos los amigos ya fueron sorteados.");
+        //Muestra boton de Nuevo juego
+        document.getElementById("botonReiniciar").style.display = "inline-block";
         return;
     }
 
@@ -47,11 +53,32 @@ function sortearAmigo() {
         `<li>🎉 El amigo secreto es: <strong>${amigoSorteado}</strong></li>`;
 
        
-    // Quitar el amigo sorteado del array
+    // Quitar el amigo sorteado de la lista
     amigos.splice(indiceAleatorio, 1);
 
     //Limpiar lista visual
     document.getElementById("listaAmigos").innerHTML = "";
 
+    //Muestra el boton si ya no quedan amigos
+    if (amigos.length === 0) {
+        document.getElementById("botonReiniciar").style.display = "inline-block";
+    }
        
+}
+
+//funcion para Jugar de Nuevo
+function jugarDeNuevo() {
+    //Limpia todo
+    amigos = [];
+    copiaAmigosOriginal = [];
+
+    //Limpia lista, resultado y campo de entrada
+    document.getElementById("listaamigos").innerHTML = "";
+    document.getElementById("resultado").innerHTML = "";
+    document.getElementById("amigo").value = "";
+
+    //Ocultar boton de reinicio
+    document.getElementById("botonReiniciar").style.display = "none";
+
+    alert("Juego Reiniciado. Ingrese una nueva lista de amigos. ");
 }
