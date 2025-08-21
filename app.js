@@ -1,4 +1,5 @@
 let amigos = [];
+let copiaAmigosOriginal = []; //guarda la lista original
 
 function agregarAmigo() {
     let input = document.getElementById("amigo");
