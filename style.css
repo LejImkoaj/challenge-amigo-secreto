@@ -37,6 +37,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 40px 0 0;
+    gap: 40px; /*espacio en la imagen con el titulo*/
 }
 
 /* Sección de entrada */
