@@ -168,3 +168,65 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
+/* RESPONSIVIDAD */
+
+@media (max-width: 1024px) {
+    .main-title {
+        font-size: 36px;
+    }
+    .section-title {
+        font-size: 28px;
+    }
+    .input-wrapper {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        min-height: 100vh;
+    }
+    .header-banner {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    .main-title {
+        font-size: 32px;
+    }
+    .section-title {
+        font-size: 24px;
+    }
+    .input-wrapper {
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .input-title, 
+    .button-add {
+        border-radius: 25px;
+        border: 2px solid #333;
+        margin: 5px 0;
+    }
+    .button-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 26px;
+    }
+    .section-title {
+        font-size: 20px;
+    }
+    button {
+        width: 100%;
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+    .result-list {
+        font-size: 18px;
+    }
+}
