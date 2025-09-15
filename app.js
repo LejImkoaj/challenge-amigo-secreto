@@ -99,7 +99,7 @@ function jugarDeNuevo() {
     copiaAmigosOriginal = [];
 
     //Limpia lista, resultado y campo de entrada
-    document.getElementById("listaamigos").innerHTML = "";
+    document.getElementById("listaAmigos").innerHTML = "";
     document.getElementById("resultado").innerHTML = "";
     document.getElementById("amigo").value = "";
 
