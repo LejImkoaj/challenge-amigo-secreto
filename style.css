@@ -2,10 +2,13 @@
     --color-primary: #4B69FD;
     --color-secondary: #FFF9EB;
     --color-tertiary: #C4C4C4;
+    --color-tertiary-hover: #c4c4c480;
     --color-button: #fe652b;
     --color-button-hover: #e55720;
     --color-text: #444444;
     --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-sorteado: #05DF05;
 }
 
 /* Estilos generales */
@@ -21,6 +24,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: clamp(14px, 2vw, 18px);
 }
 
 .main-content {
@@ -44,7 +48,7 @@ body {
 .input-section {
     flex: 60%;
     background-color: var(--color-secondary);
-    border: 1px solid #000;
+    border: 1px solid var(--color-black);
     border-radius: 64px 64px 0 0;
     display: flex;
     flex-direction: column;
@@ -55,16 +59,17 @@ body {
 
 /* Títulos */
 .main-title {
-    font-size: 48px;
+    font-size: clamp(24px, 5vw, 48px);
     font-family: "Merriweather", serif;
     font-weight: 900;
     font-style: italic;
     color: var(--color-white);
+    text-align: center;
 }
 
 .section-title {
     font-family: "Inter", serif;
-    font-size: 36px;
+    font-size: clamp(18px, 4vw, 36px);
     font-weight: 700;
     color: var(--color-primary);
     margin: 10px 0;
@@ -83,9 +88,9 @@ body {
 .input-name {
     width: 100%;
     padding: 10px;
-    border: 2px solid #000;
+    border: 2px solid var(--color-black);
     border-radius: 25px 0 0 25px;
-    font-size: 16px;
+    font-size: clamp(14px, 2vw, 16px);
 }
 
 .button-container {
@@ -95,29 +100,45 @@ body {
 
 /*agrega boton de nuevo juego*/
 .button-container2 {
-    padding: 50px;
     justify-content: center;
-    flex-direction: column;
+    display: flex;
+    margin-top: 16px;
+}
+
+/*boton nuevo juego*/
+#botonReiniciar {
+    background-color: var(--color-tertiary-hover);
+    color: var(--color-text);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#botonReiniciar:hover {
+    background-color: var(--color-tertiary);
 }
 
 /* Estilos de entrada de texto */
 .input-title {
     flex: 1;
     padding: 10px 15px;
-    font-size: 16px;
-    border: 2px solid #333;
+    font-size: clamp(14px, 2vw, 16px);
+    border: 2px solid var(--color-text);
     border-right: none;
     border-radius: 25px 0 0 25px;
     font-family: "Merriweather", serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px var(--color-black);
 }
 
 /* Estilos de botón */
 button {
     padding: 15px 30px;
     font-family: "Inter", sans-serif;
-    font-size: 16px;
-    border: 2px solid #000;
+    font-size: clamp(14px, 2vw, 16px);
+    border: 2px solid var(--color-black);
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
@@ -130,7 +151,7 @@ button {
 }
 
 .button-add:hover {
-    background-color: #a1a1a1;
+    background-color: var(--color-tertiary);
 }
 
 /* Listas */
@@ -138,14 +159,14 @@ ul {
     list-style-type: none;
     color: var(--color-text);
     font-family: "Inter", sans-serif;
-    font-size: 18px;
+    font-size: clamp(16px, 2vw, 18px);
     margin: 20px 0;
 }
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
-    font-size: 22px;
+    color: var(--color-sorteado);
+    font-size: clamp(16px, 3vw, 22px);
     font-weight: bold;
     text-align: center;
 }
@@ -154,11 +175,11 @@ ul {
 .button-draw {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: auto;
     padding: 10px 40px;
     color: var(--color-white);
     background-color: var(--color-button);
-    font-size: 16px;
+    font-size: clamp(14px, 2vw, 16px);
 }
 
 .button-draw img {
@@ -168,6 +189,52 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
+.name-list {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+/*contenedor de caja amigo*/
+.amigo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    margin: 6px auto;
+    font-size: 1rem;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+/*NOMBRE*/
+.amigo-nombre {
+    flex: 1;
+    text-align: left;
+    word-break: break-word;
+}
+
+/*boton eliminar*/
+.button-delete {
+    background-color: var(--color-button);
+    border: none;
+    font-size: 0.7rem;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; /*se mantiene alineado el boton, aunque el nombre sea largo*/
+}
+
+.button-delete:hover {
+    background-color: var(--color-button-hover);
+}
+
 
 /* RESPONSIVIDAD */
 
