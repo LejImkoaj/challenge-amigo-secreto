@@ -32,10 +32,35 @@ function mostrarLista() {
 
     for (let i = 0; i < amigos.length; i++) {
         let li = document.createElement("li");
-        li.textContent = amigos[i];
+        li.classList.add("amigo-item"); //clase al contenedor
+
+        //nombre del amigo
+        let spanNombre = document.createElement("span");
+        spanNombre.textContent = amigos[i];
+        spanNombre.classList.add("amigo-nombre");
+
+        //boton eliminar amigo x
+        let bootnEliminar = document.createElement("button");
+        bootnEliminar.textContent = "❌";
+        bootnEliminar.classList.add("button-delete"); // clase al boton
+        bootnEliminar.onclick = function () {
+            eliminarAmigo(i);
+        }
+
+        li.appendChild(spanNombre);
+        li.appendChild(bootnEliminar);
         lista.appendChild(li);
     }
 }
+
+//funcion para eliminar amigos de la lista
+function eliminarAmigo(indice) {
+    amigos.splice(indice, 1);
+    copiaAmigosOriginal.splice(indice, 1);
+
+    mostrarLista();
+}
+
 //Valida amigos disponibles
 function sortearAmigo() {
     if (amigos.length === 0) {
