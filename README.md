@@ -4,9 +4,14 @@
   🚧: Proyecto Amigo Secreto 🚧:
 </h4>
 # Portfolio ¡Hola, bienvenido a mi proyecto de portafolio!
+🔨 Funcionalidades del proyecto
+- Permite sortear al hazar las personas ingresadas.
+- No permite ingresar numeros o simbolos.
+- Puedes eliminar un amigo ingresado antes de sortear.
+- Permite reiniciar el juego
 
 
-## Herramientas utilizadas:
+## ✔️ Herramientas utilizadas
 
 * HTML
 
