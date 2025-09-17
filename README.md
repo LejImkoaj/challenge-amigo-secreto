@@ -1,8 +1,24 @@
 <h1 align="center"> Challenge Amigo Secreto </h1>
 
 <h4 align="center">
-  🚧: Proyecto en Construcción 🚧:
+  🚧: Proyecto Amigo Secreto 🚧:
 </h4>
-- Creando un Array - declarando la variable que almacenará los nombres de los amigos ingresados:
+# Portfolio ¡Hola, bienvenido a mi proyecto de portafolio!
 
-```let amigos = [ ]```
+
+## Herramientas utilizadas:
+
+* HTML
+
+* JavaScript
+
+* CSS
+
+* Flex-box
+
+## Hecho por:
+
+### Daniel Agusto Soto M
+
+### Linkedin: 
+
