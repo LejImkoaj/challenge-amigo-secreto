@@ -109,12 +109,14 @@ body {
 #botonReiniciar {
     background-color: var(--color-tertiary-hover);
     color: var(--color-text);
-    border: none;
-    border-radius: 8px;
+    border: 2px solid var(--color-black);
+    margin-top: 16px;
+    border-radius: 25px;
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
     transition: background 0.3s;
+    box-shadow: 0 4px 8px var(--color-black);
 }
 
 #botonReiniciar:hover {
