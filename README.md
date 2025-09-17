@@ -16,9 +16,13 @@
 
 * Flex-box
 
+
+
+🛠️ Acceso al proyecto 🛠️ 
+
+https://challenge-amigo-secreto-eta-indol.vercel.app/
+
 ## Hecho por:
 
 ### Daniel Agusto Soto M
-
-### Linkedin: 
 
