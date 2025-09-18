@@ -11,6 +11,8 @@
 - Puedes eliminar un amigo ingresado antes de sortear.
 - Permite reiniciar el juego
 
+video-como-funciona-el-juego.mp4
+
 
 ## ✔️ Herramientas utilizadas
 
