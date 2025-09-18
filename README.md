@@ -42,7 +42,7 @@ function jugarDeNuevo() {
     alert("Juego Reiniciado. Ingrese una nueva lista de amigos. ");
 }
 ```
-###Images
+###Imagen del Juego
 
 Image:
 
@@ -53,6 +53,9 @@ Image:
 🛠️ Acceso al proyecto 🛠️ 
 ### descargar el proyecto de github
 https://github.com/LejImkoaj/challenge-amigo-secreto.git
+
+### Video explicando el Juego en el proyecto
+video-explicativo-juego.mp4
 
 ### Linke del Juego
 https://challenge-amigo-secreto-eta-indol.vercel.app/
