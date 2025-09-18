@@ -52,7 +52,7 @@ Image:
 
 🛠️ Acceso al proyecto 🛠️ 
 ### descargar el proyecto de github
-[text](https://github.com/LejImkoaj/challenge-amigo-secreto.git)
+https://github.com/LejImkoaj/challenge-amigo-secreto.git
 
 ### Linke del Juego
 https://challenge-amigo-secreto-eta-indol.vercel.app/
