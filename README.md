@@ -5,8 +5,8 @@
 </h4>
 # Portfolio ¡Hola, bienvenido a mi proyecto de portafolio!
 🔨 Funcionalidades del proyecto
-- Permite sortear al hazar las personas ingresadas.
-- No permite ingresar numeros o simbolos.
+- Permite sortear al azar las personas ingresadas.
+- No permite ingresar numeros, campo vacio o simbolos.
 - Puedes eliminar un amigo ingresado antes de sortear.
 - Permite reiniciar el juego
 
@@ -20,6 +20,32 @@
 * CSS
 
 * Flex-box
+
+#### Un poco de codigo
+
+```Js
+**//funcion para Jugar de Nuevo**
+function jugarDeNuevo() {
+    //Limpia todo
+    amigos = [];
+    copiaAmigosOriginal = [];
+
+    //Limpia lista, resultado y campo de entrada
+    document.getElementById("listaAmigos").innerHTML = "";
+    document.getElementById("resultado").innerHTML = "";
+    document.getElementById("amigo").value = "";
+
+    //Ocultar boton de reinicio
+    document.getElementById("botonReiniciar").style.display = "none";
+
+    alert("Juego Reiniciado. Ingrese una nueva lista de amigos. ");
+}
+```
+###Images
+
+Image:
+
+![](https://github.com/LejImkoaj/challenge-amigo-secreto/blob/main/pagina.jpg?raw=true)
 
 
 
