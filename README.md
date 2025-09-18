@@ -4,6 +4,7 @@
   🚧: Proyecto Amigo Secreto 🚧:
 </h4>
 # Portfolio ¡Hola, bienvenido a mi proyecto de portafolio!
+
 🔨 Funcionalidades del proyecto
 - Permite sortear al azar las personas ingresadas.
 - No permite ingresar numeros, campo vacio o simbolos.
@@ -50,7 +51,10 @@ Image:
 
 
 🛠️ Acceso al proyecto 🛠️ 
+### descargar el proyecto de github
+[text](https://github.com/LejImkoaj/challenge-amigo-secreto.git)
 
+### Linke del Juego
 https://challenge-amigo-secreto-eta-indol.vercel.app/
 
 ## Hecho por:
